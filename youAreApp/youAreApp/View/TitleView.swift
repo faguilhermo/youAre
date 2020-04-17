@@ -22,13 +22,11 @@ struct TitleView: View {
                 .frame(width: highlighterSize.width, height: highlighterSize.height)
                 .padding(.top, 44)
                 .padding(.leading, 20)
-
             Text("You are...")
                 .foregroundColor(Color("font"))
                 .padding(.top, 26)
                 .padding(.leading, 20)
             }
-
             Spacer()
         }
         .font(.custom("Pecita", size: 36))

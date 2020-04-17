@@ -10,8 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
 
-    let buttonSize: CGFloat = 79
-    @State var phrase = "teste"
+    // MARK: - App constant size
+    private let buttonSize: CGFloat = 79
+    private let fontSize: CGFloat = 36
+    private let highlighterSize = CGSize(width: 163, height: 13)
+
+
+    // MARK: - Random var phrase
+    @State private var phrase = "incredible"
     
     var body: some View {
         ZStack {
@@ -19,14 +25,33 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
 
             VStack {
-                TitleView()
+                // MARK: - Title
+                HStack
+                {
+                    ZStack
+                    {
+                    Rectangle()
+                        .fill(Color("highlighter"))
+                        .frame(width: highlighterSize.width, height: highlighterSize.height)
+                        .padding(.top, 44)
+                        .padding(.leading, 20)
+
+                    Text("You are...")
+                        .foregroundColor(Color("font"))
+                        .padding(.top, 26)
+                        .padding(.leading, 20)
+                    }
+
+                    Spacer()
+                }
+                .font(.custom("Pecita", size: fontSize))
                 Spacer()
             }
 
             // MARK: - Phrase
             Spacer()
             Text(phrase)
-                .font(.custom("Pecita", size: 36))
+                .font(.custom("Pecita", size: fontSize))
                 .foregroundColor(Color("font"))
                 .padding(.leading, 20)
                 .padding(.trailing, 20)
