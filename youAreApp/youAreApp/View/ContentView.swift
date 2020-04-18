@@ -49,13 +49,11 @@ struct ContentView: View {
             }
 
             // MARK: - Phrase
-            Spacer()
             Text(phrase)
                 .font(.custom("Pecita", size: fontSize))
                 .foregroundColor(Color("font"))
                 .padding(.leading, 20)
                 .padding(.trailing, 20)
-            Spacer()
 
             VStack {
                 Spacer()
