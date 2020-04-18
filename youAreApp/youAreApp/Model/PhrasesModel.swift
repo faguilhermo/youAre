@@ -10,6 +10,6 @@ import Foundation
 
 struct PhrasesModel {
 
-    static var phrasesList = ["beautiful", "elegant", "smart", "friendly", "kind", "smelling", "incredibly beautiful", "magically charming", "charming",                                 "fascinating", "nice", "cool", "funny", "looking gorgeous", "pretty", "awsome", "really nice", "really cute", "really funny",                              "grate", "fantastic", "brilliant", "stunning", "good", "shiny", "look so amazing today", "breathtaking", "shining brighter than the                         sun", "look amazing in that outfit", "thousand times better than yesterday", "on your best day today"]
+    static var phrasesList = ["beautiful", "elegant", "smart", "friendly", "kind", "smelling", "incredibly beautiful",       "magically charming", "charming", "fascinating", "nice", "cool", "funny", "looking gorgeous", "pretty", "awsome", "really nice", "really cute", "really funny", "grate", "fantastic", "brilliant", "stunning", "good", "shiny", "looking so amazing today", "breathtaking", "shining brighter than the sun", "looking amazing in that outfit", "thousand times better than yesterday", "on your best day today"]
 
 }

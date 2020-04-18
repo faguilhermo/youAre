@@ -64,6 +64,7 @@ struct ContentView: View {
                 .foregroundColor(Color("font"))
                 .padding(.leading, 20)
                 .padding(.trailing, 20)
+                .multilineTextAlignment(.center)
 
             VStack {
                 Spacer()
